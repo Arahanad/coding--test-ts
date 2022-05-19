@@ -23,7 +23,7 @@ export let getsuggetions = async (req:Request, res:Response) =>{
         },
         //Stage 2:- getting only cities under length radius and search for provided key word 
         {
-            $match:  {distance: {$lte: radius}, name:  new RegExp(word) }
+            $match:  {distance: {$lte: radius}, name:  new RegExp("^"+word) }
         },
         // Stage 3:- sorting the values by provided sort crieteria
         {
@@ -34,7 +34,6 @@ export let getsuggetions = async (req:Request, res:Response) =>{
 
     const data = await City.aggregate(query)
 
-    console.log(data.length)
     res.status(200).json({
         "suggestions": data // sending data via json response
     });
