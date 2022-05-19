@@ -38,5 +38,5 @@ npm test
      
 ## POC
 
-![alt text](https://raw.githubusercontent.com/Arahanad/coding--test-ts/master/src/POC/POC.gif "Bot POC")
+![alt text](https://github.com/Arahanad/coding--test-ts/raw/master/POC/POC.gif "Bot POC")
 
