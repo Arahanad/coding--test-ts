@@ -17,8 +17,6 @@
 
 ## Installation
 
-Dillinger requires [Node.js](https://nodejs.org/)  and [Heroku](https://www.heroku.com/) to run.
-
 1) Install the dependencies :-
 
 ```sh
