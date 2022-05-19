@@ -82,4 +82,4 @@ const citySchema: Schema = new Schema({
     }
   });
 
-export const City: Model<ICity> = model('City', citySchema);
+export const City: Model<ICity> = model('City', citySchema); // exporting City model
