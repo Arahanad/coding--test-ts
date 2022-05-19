@@ -1,4 +1,4 @@
-import express, {Request,Response,Router,Application, application} from 'express';
+import express, {Router} from 'express';
 import { getsuggetions } from '../controllers/suggetionsController';
 
 const router:Router = express.Router();
