@@ -4,10 +4,12 @@ import { City } from '../models/cityModel';
 
 export let getsuggetions = async (req:Request, res:Response) =>{
 
+    // initializing params provided by user
     const longitude = parseFloat("" + req.query.longitude)
     const latitude = parseFloat("" + req.query.latitude)
     const radius = parseFloat("" + req.query.radius)
     const word  = "" + req.query.q
+
     var sort:Record<string, | 1 | -1 | {$meta: "textScore"}>
 
     if(req.query.sort == "distance"){  // sort criteria selection ny dostance and name

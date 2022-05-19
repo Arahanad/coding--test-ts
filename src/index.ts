@@ -17,5 +17,3 @@ mongoose // mongodb connection with mongoose
 app.listen(PORT, ():void => {
 console.log(`Server Running here 👉 https://localhost:${PORT}`);
 });
-
-export {app}
